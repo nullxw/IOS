@@ -7,13 +7,14 @@
 //
 
 #import "QXTAppDelegate.h"
+#import "QXTViewController.h"
 
 @implementation QXTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    self.window.rootViewController = [[QXTViewController alloc]init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
