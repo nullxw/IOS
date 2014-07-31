@@ -19,7 +19,6 @@
 		00401861198A9C0D00AC648E /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401860198A9C0D00AC648E /* ___Tests.m */; };
 		00401871198A9C3A00AC648E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0040186C198A9C3A00AC648E /* main.m */; };
 		00401872198A9C3A00AC648E /* QXTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0040186E198A9C3A00AC648E /* QXTAppDelegate.m */; };
-		00401873198A9C3A00AC648E /* 企信通-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0040186F198A9C3A00AC648E /* 企信通-Info.plist */; };
 		00401A44198A9C9800AC648E /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401A43198A9C9800AC648E /* libresolv.dylib */; };
 		00401A46198A9CA000AC648E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401A45198A9CA000AC648E /* libxml2.dylib */; };
 		00401A48198A9CA700AC648E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401A47198A9CA700AC648E /* Security.framework */; };
@@ -63,11 +62,9 @@
 		00401BBA198A9D1E00AC648E /* XMPPIQ+LastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AB4198A9D1E00AC648E /* XMPPIQ+LastActivity.m */; };
 		00401BBB198A9D1E00AC648E /* XMPPLastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AB6198A9D1E00AC648E /* XMPPLastActivity.m */; };
 		00401BBC198A9D1E00AC648E /* XMPPPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AB9198A9D1E00AC648E /* XMPPPrivacy.m */; };
-		00401BBD198A9D1E00AC648E /* XMPPRoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00401ABC198A9D1E00AC648E /* XMPPRoom.xcdatamodeld */; };
 		00401BBE198A9D1E00AC648E /* XMPPRoomCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401ABE198A9D1E00AC648E /* XMPPRoomCoreDataStorage.m */; };
 		00401BBF198A9D1E00AC648E /* XMPPRoomMessageCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AC0198A9D1E00AC648E /* XMPPRoomMessageCoreDataStorageObject.m */; };
 		00401BC0198A9D1E00AC648E /* XMPPRoomOccupantCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AC2198A9D1E00AC648E /* XMPPRoomOccupantCoreDataStorageObject.m */; };
-		00401BC1198A9D1E00AC648E /* XMPPRoomHybrid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00401AC4198A9D1E00AC648E /* XMPPRoomHybrid.xcdatamodeld */; };
 		00401BC2198A9D1E00AC648E /* XMPPRoomHybridStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AC6198A9D1E00AC648E /* XMPPRoomHybridStorage.m */; };
 		00401BC3198A9D1E00AC648E /* XMPPRoomMessageHybridCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AC9198A9D1E00AC648E /* XMPPRoomMessageHybridCoreDataStorageObject.m */; };
 		00401BC4198A9D1E00AC648E /* XMPPRoomOccupantHybridMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401ACB198A9D1E00AC648E /* XMPPRoomOccupantHybridMemoryStorageObject.m */; };
@@ -77,7 +74,6 @@
 		00401BC8198A9D1E00AC648E /* XMPPMessage+XEP0045.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AD4198A9D1E00AC648E /* XMPPMessage+XEP0045.m */; };
 		00401BC9198A9D1E00AC648E /* XMPPMUC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AD6198A9D1E00AC648E /* XMPPMUC.m */; };
 		00401BCA198A9D1E00AC648E /* XMPPRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AD8198A9D1E00AC648E /* XMPPRoom.m */; };
-		00401BCB198A9D1E00AC648E /* XMPPvCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00401ADE198A9D1E00AC648E /* XMPPvCard.xcdatamodeld */; };
 		00401BCC198A9D1E00AC648E /* XMPPvCardAvatarCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AE0198A9D1E00AC648E /* XMPPvCardAvatarCoreDataStorageObject.m */; };
 		00401BCD198A9D1E00AC648E /* XMPPvCardCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AE2198A9D1E00AC648E /* XMPPvCardCoreDataStorage.m */; };
 		00401BCE198A9D1E00AC648E /* XMPPvCardCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401AE4198A9D1E00AC648E /* XMPPvCardCoreDataStorageObject.m */; };
@@ -108,7 +104,6 @@
 		00401BE7198A9D1E00AC648E /* XMPPCapsCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B20198A9D1E00AC648E /* XMPPCapsCoreDataStorageObject.m */; };
 		00401BE8198A9D1E00AC648E /* XMPPCapsResourceCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B22198A9D1E00AC648E /* XMPPCapsResourceCoreDataStorageObject.m */; };
 		00401BE9198A9D1E00AC648E /* XMPPCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B24198A9D1E00AC648E /* XMPPCapabilities.m */; };
-		00401BEA198A9D1E00AC648E /* XMPPMessageArchiving.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00401B27198A9D1E00AC648E /* XMPPMessageArchiving.xcdatamodeld */; };
 		00401BEB198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B29198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.m */; };
 		00401BEC198A9D1E00AC648E /* XMPPMessageArchiving_Message_CoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B2B198A9D1E00AC648E /* XMPPMessageArchiving_Message_CoreDataObject.m */; };
 		00401BED198A9D1E00AC648E /* XMPPMessageArchivingCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B2D198A9D1E00AC648E /* XMPPMessageArchivingCoreDataStorage.m */; };
@@ -151,8 +146,14 @@
 		00401C12198A9D1E00AC648E /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B8B198A9D1E00AC648E /* DDXMLElement.m */; };
 		00401C13198A9D1E00AC648E /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B8D198A9D1E00AC648E /* DDXMLNode.m */; };
 		00401C14198A9D1E00AC648E /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 00401B91198A9D1E00AC648E /* build-libidn.sh */; };
-		00401C15198A9D1E00AC648E /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401B93198A9D1E00AC648E /* libidn.a */; };
-		00401C1B198A9D8C00AC648E /* QXTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C1A198A9D8C00AC648E /* QXTViewController.m */; };
+		00401C1E198A9E9F00AC648E /* QXTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C1D198A9E9F00AC648E /* QXTTabBarViewController.m */; };
+		00401C2A198A9F1000AC648E /* QXTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C29198A9F1000AC648E /* QXTNavigationController.m */; };
+		00401C30198A9F3B00AC648E /* UIBarButtonItem+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */; };
+		00401C31198A9F3B00AC648E /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2F198A9F3B00AC648E /* UIImage+MJ.m */; };
+		00401C3F198AAB4300AC648E /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C3E198AAB4300AC648E /* BaseTabBar.m */; };
+		00401C42198AABBC00AC648E /* BaseTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C41198AABBC00AC648E /* BaseTabBarButton.m */; };
+		00401C45198AAC2200AC648E /* BaseBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C44198AAC2200AC648E /* BaseBadgeButton.m */; };
+		00401C4D198AB6F900AC648E /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401C4C198AB6F900AC648E /* libidn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -444,11 +445,24 @@
 		00401B8F198A9D1E00AC648E /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		00401B91198A9D1E00AC648E /* build-libidn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-libidn.sh"; sourceTree = "<group>"; };
 		00401B92198A9D1E00AC648E /* idn-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idn-int.h"; sourceTree = "<group>"; };
-		00401B93198A9D1E00AC648E /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		00401B94198A9D1E00AC648E /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		00401B95198A9D1E00AC648E /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPFramework.h; sourceTree = "<group>"; };
-		00401C19198A9D8C00AC648E /* QXTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTViewController.h; sourceTree = "<group>"; };
-		00401C1A198A9D8C00AC648E /* QXTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTViewController.m; sourceTree = "<group>"; };
+		00401C1C198A9E9F00AC648E /* QXTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTTabBarViewController.h; sourceTree = "<group>"; };
+		00401C1D198A9E9F00AC648E /* QXTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTTabBarViewController.m; sourceTree = "<group>"; };
+		00401C28198A9F1000AC648E /* QXTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTNavigationController.h; sourceTree = "<group>"; };
+		00401C29198A9F1000AC648E /* QXTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTNavigationController.m; sourceTree = "<group>"; };
+		00401C2C198A9F3B00AC648E /* UIBarButtonItem+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MJ.h"; sourceTree = "<group>"; };
+		00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MJ.m"; sourceTree = "<group>"; };
+		00401C2E198A9F3B00AC648E /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
+		00401C2F198A9F3B00AC648E /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
+		00401C32198A9FF800AC648E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		00401C3D198AAB4300AC648E /* BaseTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
+		00401C3E198AAB4300AC648E /* BaseTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
+		00401C40198AABBC00AC648E /* BaseTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarButton.h; sourceTree = "<group>"; };
+		00401C41198AABBC00AC648E /* BaseTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarButton.m; sourceTree = "<group>"; };
+		00401C43198AAC2200AC648E /* BaseBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBadgeButton.h; sourceTree = "<group>"; };
+		00401C44198AAC2200AC648E /* BaseBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBadgeButton.m; sourceTree = "<group>"; };
+		00401C4C198AB6F900AC648E /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,7 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00401A4A198A9CAD00AC648E /* CFNetwork.framework in Frameworks */,
-				00401C15198A9D1E00AC648E /* libidn.a in Frameworks */,
+				00401C4D198AB6F900AC648E /* libidn.a in Frameworks */,
 				00401A48198A9CA700AC648E /* Security.framework in Frameworks */,
 				00401A46198A9CA000AC648E /* libxml2.dylib in Frameworks */,
 				00401A44198A9C9800AC648E /* libresolv.dylib in Frameworks */,
@@ -562,12 +576,14 @@
 		0040186B198A9C3A00AC648E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				00401C2B198A9F3B00AC648E /* Category */,
 				00401A4B198A9D1E00AC648E /* Lib */,
 				0040186C198A9C3A00AC648E /* main.m */,
 				0040186D198A9C3A00AC648E /* QXTAppDelegate.h */,
 				0040186E198A9C3A00AC648E /* QXTAppDelegate.m */,
 				0040186F198A9C3A00AC648E /* 企信通-Info.plist */,
 				00401870198A9C3A00AC648E /* 企信通-Prefix.pch */,
+				00401C32198A9FF800AC648E /* Common.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1356,9 +1372,9 @@
 		00401B90198A9D1E00AC648E /* libidn */ = {
 			isa = PBXGroup;
 			children = (
+				00401C4C198AB6F900AC648E /* libidn.a */,
 				00401B91198A9D1E00AC648E /* build-libidn.sh */,
 				00401B92198A9D1E00AC648E /* idn-int.h */,
-				00401B93198A9D1E00AC648E /* libidn.a */,
 				00401B94198A9D1E00AC648E /* stringprep.h */,
 			);
 			path = libidn;
@@ -1367,8 +1383,8 @@
 		00401C16198A9D4A00AC648E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				00401C33198AAB0600AC648E /* View */,
 				00401C17198A9D5D00AC648E /* Controller */,
-				00401C18198A9D5D00AC648E /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1376,15 +1392,34 @@
 		00401C17198A9D5D00AC648E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				00401C19198A9D8C00AC648E /* QXTViewController.h */,
-				00401C1A198A9D8C00AC648E /* QXTViewController.m */,
+				00401C1C198A9E9F00AC648E /* QXTTabBarViewController.h */,
+				00401C1D198A9E9F00AC648E /* QXTTabBarViewController.m */,
+				00401C28198A9F1000AC648E /* QXTNavigationController.h */,
+				00401C29198A9F1000AC648E /* QXTNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		00401C18198A9D5D00AC648E /* View */ = {
+		00401C2B198A9F3B00AC648E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				00401C2C198A9F3B00AC648E /* UIBarButtonItem+MJ.h */,
+				00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */,
+				00401C2E198A9F3B00AC648E /* UIImage+MJ.h */,
+				00401C2F198A9F3B00AC648E /* UIImage+MJ.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		00401C33198AAB0600AC648E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00401C3D198AAB4300AC648E /* BaseTabBar.h */,
+				00401C3E198AAB4300AC648E /* BaseTabBar.m */,
+				00401C40198AABBC00AC648E /* BaseTabBarButton.h */,
+				00401C41198AABBC00AC648E /* BaseTabBarButton.m */,
+				00401C43198AAC2200AC648E /* BaseBadgeButton.h */,
+				00401C44198AAC2200AC648E /* BaseBadgeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1469,7 +1504,6 @@
 				00401846198A9C0D00AC648E /* InfoPlist.strings in Resources */,
 				0040184E198A9C0D00AC648E /* Images.xcassets in Resources */,
 				00401C0F198A9D1E00AC648E /* README.txt in Resources */,
-				00401873198A9C3A00AC648E /* 企信通-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1489,7 +1523,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00401BC0198A9D1E00AC648E /* XMPPRoomOccupantCoreDataStorageObject.m in Sources */,
-				00401BC1198A9D1E00AC648E /* XMPPRoomHybrid.xcdatamodeld in Sources */,
 				00401BDD198A9D1E00AC648E /* XMPPIQ+XEP_0066.m in Sources */,
 				00401BA1198A9D1E00AC648E /* XMPPIQ.m in Sources */,
 				00401BDC198A9D1E00AC648E /* TURNSocket.m in Sources */,
@@ -1504,6 +1537,7 @@
 				00401BD1198A9D1E00AC648E /* XMPPvCardTempAdr.m in Sources */,
 				00401B9E198A9D1E00AC648E /* NSNumber+XMPP.m in Sources */,
 				00401BE0198A9D1E00AC648E /* XMPPDateTimeProfiles.m in Sources */,
+				00401C2A198A9F1000AC648E /* QXTNavigationController.m in Sources */,
 				00401C03198A9D1E00AC648E /* RFImageToDataTransformer.m in Sources */,
 				00401BA3198A9D1E00AC648E /* XMPPMessage.m in Sources */,
 				00401BD7198A9D1E00AC648E /* XMPPvCardTempTel.m in Sources */,
@@ -1512,10 +1546,13 @@
 				00401BD2198A9D1E00AC648E /* XMPPvCardTempAdrTypes.m in Sources */,
 				00401BFD198A9D1E00AC648E /* NSXMLElement+XEP_0297.m in Sources */,
 				00401BF9198A9D1E00AC648E /* NSXMLElement+XEP_0203.m in Sources */,
+				00401C42198AABBC00AC648E /* BaseTabBarButton.m in Sources */,
 				00401BB9198A9D1E00AC648E /* XMPPJabberRPCModule.m in Sources */,
 				00401872198A9C3A00AC648E /* QXTAppDelegate.m in Sources */,
 				00401C02198A9D1E00AC648E /* GCDMulticastDelegate.m in Sources */,
 				00401BA7198A9D1E00AC648E /* XMPPStream.m in Sources */,
+				00401C1E198A9E9F00AC648E /* QXTTabBarViewController.m in Sources */,
+				00401C3F198AAB4300AC648E /* BaseTabBar.m in Sources */,
 				00401BE8198A9D1E00AC648E /* XMPPCapsResourceCoreDataStorageObject.m in Sources */,
 				00401BCD198A9D1E00AC648E /* XMPPvCardCoreDataStorage.m in Sources */,
 				00401BB3198A9D1E00AC648E /* XMPPRosterMemoryStorage.m in Sources */,
@@ -1528,6 +1565,7 @@
 				00401BD9198A9D1E00AC648E /* XMPPResultSet.m in Sources */,
 				00401BA9198A9D1E00AC648E /* XMPPCoreDataStorage.m in Sources */,
 				00401BE5198A9D1E00AC648E /* XMPPCapabilities.xcdatamodel in Sources */,
+				00401C30198A9F3B00AC648E /* UIBarButtonItem+MJ.m in Sources */,
 				00401BB1198A9D1E00AC648E /* XMPPUserCoreDataStorageObject.m in Sources */,
 				00401C11198A9D1E00AC648E /* DDXMLDocument.m in Sources */,
 				00401BB0198A9D1E00AC648E /* XMPPRosterCoreDataStorage.m in Sources */,
@@ -1559,14 +1597,14 @@
 				00401C01198A9D1E00AC648E /* DDList.m in Sources */,
 				00401BC6198A9D1E00AC648E /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
 				00401BA5198A9D1E00AC648E /* XMPPParser.m in Sources */,
+				00401C31198A9F3B00AC648E /* UIImage+MJ.m in Sources */,
 				00401BFB198A9D1E00AC648E /* XMPPAttentionModule.m in Sources */,
 				00401BA4198A9D1E00AC648E /* XMPPModule.m in Sources */,
 				00401BDE198A9D1E00AC648E /* XMPPMessage+XEP_0066.m in Sources */,
+				00401C45198AAC2200AC648E /* BaseBadgeButton.m in Sources */,
 				00401C10198A9D1E00AC648E /* NSString+DDXML.m in Sources */,
 				00401BAD198A9D1E00AC648E /* XMPPGroupCoreDataStorageObject.m in Sources */,
-				00401BEA198A9D1E00AC648E /* XMPPMessageArchiving.xcdatamodeld in Sources */,
 				00401BB4198A9D1E00AC648E /* XMPPUserMemoryStorageObject.m in Sources */,
-				00401BCB198A9D1E00AC648E /* XMPPvCard.xcdatamodeld in Sources */,
 				00401BF8198A9D1E00AC648E /* XMPPTime.m in Sources */,
 				00401BC9198A9D1E00AC648E /* XMPPMUC.m in Sources */,
 				00401BE2198A9D1E00AC648E /* XMPPSoftwareVersion.m in Sources */,
@@ -1594,7 +1632,6 @@
 				00401BF4198A9D1E00AC648E /* XMPPBlocking.m in Sources */,
 				00401C00198A9D1E00AC648E /* NSXMLElement+XEP_0335.m in Sources */,
 				00401BEE198A9D1E00AC648E /* XMPPMessageArchiving.m in Sources */,
-				00401C1B198A9D8C00AC648E /* QXTViewController.m in Sources */,
 				00401BD3198A9D1E00AC648E /* XMPPvCardTempBase.m in Sources */,
 				00401BAA198A9D1E00AC648E /* XMPPGoogleSharedStatus.m in Sources */,
 				00401BB6198A9D1E00AC648E /* XMPPSystemInputActivityMonitor.m in Sources */,
@@ -1610,7 +1647,6 @@
 				00401BE1198A9D1E00AC648E /* XMPPMessage+XEP_0085.m in Sources */,
 				00401BA8198A9D1E00AC648E /* XMPPBandwidthMonitor.m in Sources */,
 				00401C0C198A9D1E00AC648E /* DDTTYLogger.m in Sources */,
-				00401BBD198A9D1E00AC648E /* XMPPRoom.xcdatamodeld in Sources */,
 				00401BAF198A9D1E00AC648E /* XMPPRoster.xcdatamodel in Sources */,
 				00401C08198A9D1E00AC648E /* DDAbstractDatabaseLogger.m in Sources */,
 				00401BD4198A9D1E00AC648E /* XMPPvCardTempEmail.m in Sources */,
@@ -1691,10 +1727,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
@@ -1729,7 +1765,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1747,6 +1782,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "企信通/Class/Other/企信通-Prefix.pch";
 				INFOPLIST_FILE = "企信通/Class/Other/企信通-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/企信通/Class/Lib/XMPP/Vender/libidn",
@@ -1765,6 +1801,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "企信通/Class/Other/企信通-Prefix.pch";
 				INFOPLIST_FILE = "企信通/Class/Other/企信通-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/企信通/Class/Lib/XMPP/Vender/libidn",
@@ -1834,6 +1871,7 @@
 				00401866198A9C0D00AC648E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00401867198A9C0D00AC648E /* Build configuration list for PBXNativeTarget "企信通Tests" */ = {
 			isa = XCConfigurationList;
@@ -1842,6 +1880,7 @@
 				00401869198A9C0D00AC648E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
