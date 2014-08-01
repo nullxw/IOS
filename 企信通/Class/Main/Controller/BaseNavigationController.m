@@ -1,18 +1,18 @@
 //
-//  QXTNavigationController.m
+//  BaseNavigationController.m
 //  企信通
 //
 //  Created by 林柏参 on 14/7/31.
 //  Copyright (c) 2014年 林柏参. All rights reserved.
 //
 
-#import "QXTNavigationController.h"
+#import "BaseNavigationController.h"
 
-@interface QXTNavigationController ()
+@interface BaseNavigationController ()
 
 @end
 
-@implementation QXTNavigationController
+@implementation BaseNavigationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -90,9 +90,21 @@
 {
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
+        /**
+         *  如何打开下面这句 系统所有的左上角都是统一的返回按钮
+         */
+//        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"navBack" highlighted:@"navBack_hl" target:self action:@selector(leftClick)];
     }
     [super pushViewController:viewController animated:animated];
 }
 
+/**
+ *  自己更改图片名
+ */
+-(void)leftClick
+{
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"searchReslut" object:nil];
+    [self popViewControllerAnimated:YES];
+}
 
 @end

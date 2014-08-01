@@ -146,8 +146,8 @@
 		00401C12198A9D1E00AC648E /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B8B198A9D1E00AC648E /* DDXMLElement.m */; };
 		00401C13198A9D1E00AC648E /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401B8D198A9D1E00AC648E /* DDXMLNode.m */; };
 		00401C14198A9D1E00AC648E /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 00401B91198A9D1E00AC648E /* build-libidn.sh */; };
-		00401C1E198A9E9F00AC648E /* QXTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C1D198A9E9F00AC648E /* QXTTabBarViewController.m */; };
-		00401C2A198A9F1000AC648E /* QXTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C29198A9F1000AC648E /* QXTNavigationController.m */; };
+		00401C1E198A9E9F00AC648E /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C1D198A9E9F00AC648E /* BaseTabBarViewController.m */; };
+		00401C2A198A9F1000AC648E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C29198A9F1000AC648E /* BaseNavigationController.m */; };
 		00401C30198A9F3B00AC648E /* UIBarButtonItem+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */; };
 		00401C31198A9F3B00AC648E /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2F198A9F3B00AC648E /* UIImage+MJ.m */; };
 		00401C3F198AAB4300AC648E /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C3E198AAB4300AC648E /* BaseTabBar.m */; };
@@ -447,10 +447,10 @@
 		00401B92198A9D1E00AC648E /* idn-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idn-int.h"; sourceTree = "<group>"; };
 		00401B94198A9D1E00AC648E /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		00401B95198A9D1E00AC648E /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPFramework.h; sourceTree = "<group>"; };
-		00401C1C198A9E9F00AC648E /* QXTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTTabBarViewController.h; sourceTree = "<group>"; };
-		00401C1D198A9E9F00AC648E /* QXTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTTabBarViewController.m; sourceTree = "<group>"; };
-		00401C28198A9F1000AC648E /* QXTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTNavigationController.h; sourceTree = "<group>"; };
-		00401C29198A9F1000AC648E /* QXTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTNavigationController.m; sourceTree = "<group>"; };
+		00401C1C198A9E9F00AC648E /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		00401C1D198A9E9F00AC648E /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		00401C28198A9F1000AC648E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		00401C29198A9F1000AC648E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		00401C2C198A9F3B00AC648E /* UIBarButtonItem+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MJ.h"; sourceTree = "<group>"; };
 		00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MJ.m"; sourceTree = "<group>"; };
 		00401C2E198A9F3B00AC648E /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
@@ -567,7 +567,11 @@
 		0040186A198A9C3A00AC648E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				00D374B4198B7B87000B5EE6 /* 企信通 */,
+				00D374B7198B7B87000B5EE6 /* 企业名册 */,
+				00D374BA198B7B87000B5EE6 /* 我的名片 */,
 				00401C16198A9D4A00AC648E /* Main */,
+				00401C33198AAB0600AC648E /* View */,
 				0040186B198A9C3A00AC648E /* Other */,
 			);
 			path = Class;
@@ -1383,7 +1387,6 @@
 		00401C16198A9D4A00AC648E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				00401C33198AAB0600AC648E /* View */,
 				00401C17198A9D5D00AC648E /* Controller */,
 			);
 			path = Main;
@@ -1392,10 +1395,10 @@
 		00401C17198A9D5D00AC648E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				00401C1C198A9E9F00AC648E /* QXTTabBarViewController.h */,
-				00401C1D198A9E9F00AC648E /* QXTTabBarViewController.m */,
-				00401C28198A9F1000AC648E /* QXTNavigationController.h */,
-				00401C29198A9F1000AC648E /* QXTNavigationController.m */,
+				00401C1C198A9E9F00AC648E /* BaseTabBarViewController.h */,
+				00401C1D198A9E9F00AC648E /* BaseTabBarViewController.m */,
+				00401C28198A9F1000AC648E /* BaseNavigationController.h */,
+				00401C29198A9F1000AC648E /* BaseNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1420,6 +1423,76 @@
 				00401C41198AABBC00AC648E /* BaseTabBarButton.m */,
 				00401C43198AAC2200AC648E /* BaseBadgeButton.h */,
 				00401C44198AAC2200AC648E /* BaseBadgeButton.m */,
+			);
+			name = View;
+			path = Main/View;
+			sourceTree = "<group>";
+		};
+		00D374B4198B7B87000B5EE6 /* 企信通 */ = {
+			isa = PBXGroup;
+			children = (
+				00D374B5198B7B87000B5EE6 /* Controller */,
+				00D374B6198B7B87000B5EE6 /* View */,
+			);
+			path = "企信通";
+			sourceTree = "<group>";
+		};
+		00D374B5198B7B87000B5EE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00D374B6198B7B87000B5EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00D374B7198B7B87000B5EE6 /* 企业名册 */ = {
+			isa = PBXGroup;
+			children = (
+				00D374B8198B7B87000B5EE6 /* Controller */,
+				00D374B9198B7B87000B5EE6 /* View */,
+			);
+			path = "企业名册";
+			sourceTree = "<group>";
+		};
+		00D374B8198B7B87000B5EE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00D374B9198B7B87000B5EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00D374BA198B7B87000B5EE6 /* 我的名片 */ = {
+			isa = PBXGroup;
+			children = (
+				00D374BB198B7B87000B5EE6 /* Controller */,
+				00D374BC198B7B87000B5EE6 /* View */,
+			);
+			path = "我的名片";
+			sourceTree = "<group>";
+		};
+		00D374BB198B7B87000B5EE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00D374BC198B7B87000B5EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1537,7 +1610,7 @@
 				00401BD1198A9D1E00AC648E /* XMPPvCardTempAdr.m in Sources */,
 				00401B9E198A9D1E00AC648E /* NSNumber+XMPP.m in Sources */,
 				00401BE0198A9D1E00AC648E /* XMPPDateTimeProfiles.m in Sources */,
-				00401C2A198A9F1000AC648E /* QXTNavigationController.m in Sources */,
+				00401C2A198A9F1000AC648E /* BaseNavigationController.m in Sources */,
 				00401C03198A9D1E00AC648E /* RFImageToDataTransformer.m in Sources */,
 				00401BA3198A9D1E00AC648E /* XMPPMessage.m in Sources */,
 				00401BD7198A9D1E00AC648E /* XMPPvCardTempTel.m in Sources */,
@@ -1551,7 +1624,7 @@
 				00401872198A9C3A00AC648E /* QXTAppDelegate.m in Sources */,
 				00401C02198A9D1E00AC648E /* GCDMulticastDelegate.m in Sources */,
 				00401BA7198A9D1E00AC648E /* XMPPStream.m in Sources */,
-				00401C1E198A9E9F00AC648E /* QXTTabBarViewController.m in Sources */,
+				00401C1E198A9E9F00AC648E /* BaseTabBarViewController.m in Sources */,
 				00401C3F198AAB4300AC648E /* BaseTabBar.m in Sources */,
 				00401BE8198A9D1E00AC648E /* XMPPCapsResourceCoreDataStorageObject.m in Sources */,
 				00401BCD198A9D1E00AC648E /* XMPPvCardCoreDataStorage.m in Sources */,

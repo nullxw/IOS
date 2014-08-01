@@ -90,6 +90,7 @@
     
     // 2.设置数据
     button.item = item;
+    button.tag = _itemCount;
     
     // 3.监听按钮点击
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
@@ -98,7 +99,6 @@
     if (self.tabBarButtons.count == 1) {
         [self buttonClick:button];
     }
-    
     _itemCount++;
 }
 

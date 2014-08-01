@@ -7,14 +7,14 @@
 //
 
 #import "QXTAppDelegate.h"
-#import "QXTTabBarViewController.h"
+#import "BaseTabBarViewController.h"
 
 @implementation QXTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[QXTTabBarViewController alloc]init];
+    self.window.rootViewController = [[BaseTabBarViewController alloc]init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

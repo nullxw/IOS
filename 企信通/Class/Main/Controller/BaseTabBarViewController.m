@@ -1,16 +1,16 @@
 //
-//  QXTTabBarViewController.m
+//  BaseTabBarViewController.m
 //  企信通
 //
 //  Created by 林柏参 on 14/7/31.
 //  Copyright (c) 2014年 林柏参. All rights reserved.
 //
 
-#import "QXTTabBarViewController.h"
-#import "QXTNavigationController.h"
+#import "BaseTabBarViewController.h"
+#import "BaseNavigationController.h"
 #import "BaseTabBar.h"
 
-@interface QXTTabBarViewController ()<BaseTabBarDelegate>
+@interface BaseTabBarViewController ()<BaseTabBarDelegate>
 /**
  *  自定义的tabbar
  */
@@ -18,16 +18,7 @@
 
 @end
 
-@implementation QXTTabBarViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation BaseTabBarViewController
 
 - (void)viewDidLoad
 {
@@ -81,19 +72,15 @@
 {
     // 1.首页
     UIViewController *home = [[UIViewController alloc] init];
-    [self setupChildViewController:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    [self setupChildViewController:home title:@"企信通" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     
     // 2.消息
     UIViewController *message = [[UIViewController alloc] init];
-    [self setupChildViewController:message title:@"消息" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
+    [self setupChildViewController:message title:@"系统名册" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
     
     // 3.广场
     UIViewController *discover = [[UIViewController alloc] init];
-    [self setupChildViewController:discover title:@"广场" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
-    
-    // 4.我
-    UIViewController *me = [[UIViewController alloc] init];
-    [self setupChildViewController:me title:@"我" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
+    [self setupChildViewController:discover title:@"我的名片" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
 }
 
 /**
@@ -119,7 +106,7 @@
     }
     
     // 2.包装一个导航控制器
-    QXTNavigationController *nav = [[QXTNavigationController alloc] initWithRootViewController:childVc];
+    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:childVc];
     [self addChildViewController:nav];
     
     // 3.添加tabbar内部的按钮

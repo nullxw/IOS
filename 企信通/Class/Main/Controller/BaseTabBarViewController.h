@@ -1,5 +1,5 @@
 //
-//  QXTTabBarViewController.h
+//  BaseTabBarViewController.h
 //  企信通
 //
 //  Created by 林柏参 on 14/7/31.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QXTTabBarViewController : UITabBarController
+@interface BaseTabBarViewController : UITabBarController
 
 @end

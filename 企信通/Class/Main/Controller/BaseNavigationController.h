@@ -1,5 +1,5 @@
 //
-//  QXTNavigationController.h
+//  BaseNavigationController.h
 //  企信通
 //
 //  Created by 林柏参 on 14/7/31.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QXTNavigationController : UINavigationController
+@interface BaseNavigationController : UINavigationController
 
 @end
