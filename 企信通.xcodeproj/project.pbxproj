@@ -13,6 +13,8 @@
 		0035FCD8198CBE880016DADB /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCD4198CBE880016DADB /* MBProgressHUD+Add.m */; };
 		0035FCD9198CBE880016DADB /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0035FCD5198CBE880016DADB /* MBProgressHUD.bundle */; };
 		0035FCDA198CBE880016DADB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCD7198CBE880016DADB /* MBProgressHUD.m */; };
+		0035FCDF198CC52E0016DADB /* QXTFriendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCDE198CC52E0016DADB /* QXTFriendTableViewController.m */; };
+		0035FCE2198CC5990016DADB /* QXTMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCE1198CC5990016DADB /* QXTMineTableViewController.m */; };
 		0040183C198A9C0D00AC648E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040183B198A9C0D00AC648E /* Foundation.framework */; };
 		0040183E198A9C0D00AC648E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040183D198A9C0D00AC648E /* CoreGraphics.framework */; };
 		00401840198A9C0D00AC648E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040183F198A9C0D00AC648E /* UIKit.framework */; };
@@ -184,6 +186,10 @@
 		0035FCD5198CBE880016DADB /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		0035FCD6198CBE880016DADB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		0035FCD7198CBE880016DADB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0035FCDD198CC52E0016DADB /* QXTFriendTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTFriendTableViewController.h; sourceTree = "<group>"; };
+		0035FCDE198CC52E0016DADB /* QXTFriendTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTFriendTableViewController.m; sourceTree = "<group>"; };
+		0035FCE0198CC5990016DADB /* QXTMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTMineTableViewController.h; sourceTree = "<group>"; };
+		0035FCE1198CC5990016DADB /* QXTMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTMineTableViewController.m; sourceTree = "<group>"; };
 		00401838198A9C0D00AC648E /* 企信通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "企信通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0040183B198A9C0D00AC648E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0040183D198A9C0D00AC648E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -523,6 +529,8 @@
 		0035FC08198CABC10016DADB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0035FCE0198CC5990016DADB /* QXTMineTableViewController.h */,
+				0035FCE1198CC5990016DADB /* QXTMineTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -546,6 +554,8 @@
 		0035FC0B198CABC20016DADB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0035FCDD198CC52E0016DADB /* QXTFriendTableViewController.h */,
+				0035FCDE198CC52E0016DADB /* QXTFriendTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -673,7 +683,6 @@
 				00D374B7198B7B87000B5EE6 /* 企业名册 */,
 				0035FC07198CABC10016DADB /* 个人中心 */,
 				00401C16198A9D4A00AC648E /* Main */,
-				00401C33198AAB0600AC648E /* View */,
 				0040186B198A9C3A00AC648E /* Other */,
 			);
 			path = Class;
@@ -1491,6 +1500,7 @@
 			isa = PBXGroup;
 			children = (
 				00401C17198A9D5D00AC648E /* Controller */,
+				00401C33198AAB0600AC648E /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1530,8 +1540,7 @@
 				00401C43198AAC2200AC648E /* BaseBadgeButton.h */,
 				00401C44198AAC2200AC648E /* BaseBadgeButton.m */,
 			);
-			name = View;
-			path = Main/View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		00D374B7198B7B87000B5EE6 /* 企业名册 */ = {
@@ -1696,6 +1705,7 @@
 				00401BD0198A9D1E00AC648E /* XMPPvCardTemp.m in Sources */,
 				00401BED198A9D1E00AC648E /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
 				0035FCD8198CBE880016DADB /* MBProgressHUD+Add.m in Sources */,
+				0035FCDF198CC52E0016DADB /* QXTFriendTableViewController.m in Sources */,
 				00401BEB198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */,
 				00401BCE198A9D1E00AC648E /* XMPPvCardCoreDataStorageObject.m in Sources */,
 				00401C0D198A9D1E00AC648E /* ContextFilterLogFormatter.m in Sources */,
@@ -1742,6 +1752,7 @@
 				00401BFB198A9D1E00AC648E /* XMPPAttentionModule.m in Sources */,
 				00401BA4198A9D1E00AC648E /* XMPPModule.m in Sources */,
 				00401BDE198A9D1E00AC648E /* XMPPMessage+XEP_0066.m in Sources */,
+				0035FCE2198CC5990016DADB /* QXTMineTableViewController.m in Sources */,
 				00401C45198AAC2200AC648E /* BaseBadgeButton.m in Sources */,
 				00401C10198A9D1E00AC648E /* NSString+DDXML.m in Sources */,
 				00401BAD198A9D1E00AC648E /* XMPPGroupCoreDataStorageObject.m in Sources */,

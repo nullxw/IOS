@@ -80,7 +80,7 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     NSString *userName = [defaults stringForKey:kXMPPLoginUserNameKey];
     
     // 如果用户名或者主机为空，不再继续
-    if (hostName.length == 0 || userName.length == 0) {
+    if (hostName.length <= 0 || userName.length <= 0) {
         // 用户名和主机都为空说明用户没有登录，通常是第一次运行程序
         // 直接显示登录窗口
         _failedBlock = nil;
@@ -162,7 +162,22 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 {
     [self disconnect];
     
-    [self setupMainViewController];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.window.rootViewController = [[QXTLoginViewController alloc]init];
+        
+        if (!_window.isKeyWindow) {
+            [_window makeKeyAndVisible];
+        }
+    });
+    
+    // 如果用户名或者密码错误，将系统偏好中的内容清除
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+//    [defaults removeObjectForKey:kXMPPLoginHostNameKey];
+    [defaults removeObjectForKey:kXMPPLoginPasswordKey];
+    [defaults removeObjectForKey:kXMPPLoginUserNameKey];
+    
+    [defaults synchronize];
 }
 
 -(void)setupXmppStream

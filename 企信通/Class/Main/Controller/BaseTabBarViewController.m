@@ -10,6 +10,9 @@
 #import "BaseNavigationController.h"
 #import "BaseTabBar.h"
 
+#import "QXTFriendTableViewController.h"
+#import "QXTMineTableViewController.h"
+
 @interface BaseTabBarViewController ()<BaseTabBarDelegate>
 /**
  *  自定义的tabbar
@@ -70,16 +73,16 @@
  */
 - (void)setupAllChildViewControllers
 {
-    // 1.首页
-    UIViewController *home = [[UIViewController alloc] init];
+    // 1.好友列表
+    QXTFriendTableViewController *home = [[QXTFriendTableViewController alloc] init];
     [self setupChildViewController:home title:@"好友列表" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     
-    // 2.消息
+    // 2.系统名册
     UIViewController *message = [[UIViewController alloc] init];
     [self setupChildViewController:message title:@"系统名册" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
     
-    // 3.广场
-    UIViewController *discover = [[UIViewController alloc] init];
+    // 3.个人中心
+    QXTMineTableViewController *discover = [[QXTMineTableViewController alloc] init];
     [self setupChildViewController:discover title:@"个人中心" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
 }
 
