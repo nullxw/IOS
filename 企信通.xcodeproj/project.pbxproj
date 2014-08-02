@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0035FC14198CAC170016DADB /* QXTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FC12198CAC170016DADB /* QXTLoginViewController.m */; };
+		0035FC15198CAC170016DADB /* QXTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0035FC13198CAC170016DADB /* QXTLoginViewController.xib */; };
+		0035FCD1198CBDFA0016DADB /* tooles.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCD0198CBDFA0016DADB /* tooles.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0035FCD8198CBE880016DADB /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCD4198CBE880016DADB /* MBProgressHUD+Add.m */; };
+		0035FCD9198CBE880016DADB /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0035FCD5198CBE880016DADB /* MBProgressHUD.bundle */; };
+		0035FCDA198CBE880016DADB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCD7198CBE880016DADB /* MBProgressHUD.m */; };
 		0040183C198A9C0D00AC648E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040183B198A9C0D00AC648E /* Foundation.framework */; };
 		0040183E198A9C0D00AC648E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040183D198A9C0D00AC648E /* CoreGraphics.framework */; };
 		00401840198A9C0D00AC648E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040183F198A9C0D00AC648E /* UIKit.framework */; };
@@ -148,8 +154,8 @@
 		00401C14198A9D1E00AC648E /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 00401B91198A9D1E00AC648E /* build-libidn.sh */; };
 		00401C1E198A9E9F00AC648E /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C1D198A9E9F00AC648E /* BaseTabBarViewController.m */; };
 		00401C2A198A9F1000AC648E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C29198A9F1000AC648E /* BaseNavigationController.m */; };
-		00401C30198A9F3B00AC648E /* UIBarButtonItem+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */; };
-		00401C31198A9F3B00AC648E /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2F198A9F3B00AC648E /* UIImage+MJ.m */; };
+		00401C30198A9F3B00AC648E /* UIBarButtonItem+BC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2D198A9F3B00AC648E /* UIBarButtonItem+BC.m */; };
+		00401C31198A9F3B00AC648E /* UIImage+BC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C2F198A9F3B00AC648E /* UIImage+BC.m */; };
 		00401C3F198AAB4300AC648E /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C3E198AAB4300AC648E /* BaseTabBar.m */; };
 		00401C42198AABBC00AC648E /* BaseTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C41198AABBC00AC648E /* BaseTabBarButton.m */; };
 		00401C45198AAC2200AC648E /* BaseBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C44198AAC2200AC648E /* BaseBadgeButton.m */; };
@@ -167,6 +173,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0035FC11198CAC170016DADB /* QXTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTLoginViewController.h; sourceTree = "<group>"; };
+		0035FC12198CAC170016DADB /* QXTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTLoginViewController.m; sourceTree = "<group>"; };
+		0035FC13198CAC170016DADB /* QXTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QXTLoginViewController.xib; sourceTree = "<group>"; };
+		0035FCCE198CB3ED0016DADB /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0035FCCF198CBDFA0016DADB /* tooles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tooles.h; sourceTree = "<group>"; };
+		0035FCD0198CBDFA0016DADB /* tooles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tooles.m; sourceTree = "<group>"; };
+		0035FCD3198CBE880016DADB /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		0035FCD4198CBE880016DADB /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		0035FCD5198CBE880016DADB /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		0035FCD6198CBE880016DADB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0035FCD7198CBE880016DADB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		00401838198A9C0D00AC648E /* 企信通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "企信通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0040183B198A9C0D00AC648E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0040183D198A9C0D00AC648E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -451,10 +468,10 @@
 		00401C1D198A9E9F00AC648E /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
 		00401C28198A9F1000AC648E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		00401C29198A9F1000AC648E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		00401C2C198A9F3B00AC648E /* UIBarButtonItem+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MJ.h"; sourceTree = "<group>"; };
-		00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MJ.m"; sourceTree = "<group>"; };
-		00401C2E198A9F3B00AC648E /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
-		00401C2F198A9F3B00AC648E /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
+		00401C2C198A9F3B00AC648E /* UIBarButtonItem+BC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BC.h"; sourceTree = "<group>"; };
+		00401C2D198A9F3B00AC648E /* UIBarButtonItem+BC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BC.m"; sourceTree = "<group>"; };
+		00401C2E198A9F3B00AC648E /* UIImage+BC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BC.h"; sourceTree = "<group>"; };
+		00401C2F198A9F3B00AC648E /* UIImage+BC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BC.m"; sourceTree = "<group>"; };
 		00401C32198A9FF800AC648E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		00401C3D198AAB4300AC648E /* BaseTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
 		00401C3E198AAB4300AC648E /* BaseTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
@@ -494,6 +511,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0035FC07198CABC10016DADB /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				0035FC08198CABC10016DADB /* Controller */,
+				0035FC09198CABC10016DADB /* View */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		0035FC08198CABC10016DADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0035FC09198CABC10016DADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0035FC0A198CABC10016DADB /* 好友列表 */ = {
+			isa = PBXGroup;
+			children = (
+				0035FC0B198CABC20016DADB /* Controller */,
+				0035FC0C198CABC20016DADB /* View */,
+			);
+			path = "好友列表";
+			sourceTree = "<group>";
+		};
+		0035FC0B198CABC20016DADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0035FC0C198CABC20016DADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0035FC0E198CABF10016DADB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0035FC0F198CAC070016DADB /* Controller */,
+				0035FC10198CAC070016DADB /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0035FC0F198CAC070016DADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0035FC11198CAC170016DADB /* QXTLoginViewController.h */,
+				0035FC12198CAC170016DADB /* QXTLoginViewController.m */,
+				0035FC13198CAC170016DADB /* QXTLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0035FC10198CAC070016DADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0035FCD2198CBE880016DADB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0035FCD3198CBE880016DADB /* MBProgressHUD+Add.h */,
+				0035FCD4198CBE880016DADB /* MBProgressHUD+Add.m */,
+				0035FCD5198CBE880016DADB /* MBProgressHUD.bundle */,
+				0035FCD6198CBE880016DADB /* MBProgressHUD.h */,
+				0035FCD7198CBE880016DADB /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		0040182F198A9C0D00AC648E = {
 			isa = PBXGroup;
 			children = (
@@ -567,9 +668,10 @@
 		0040186A198A9C3A00AC648E /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				00D374B4198B7B87000B5EE6 /* 企信通 */,
+				0035FC0E198CABF10016DADB /* Login */,
+				0035FC0A198CABC10016DADB /* 好友列表 */,
 				00D374B7198B7B87000B5EE6 /* 企业名册 */,
-				00D374BA198B7B87000B5EE6 /* 我的名片 */,
+				0035FC07198CABC10016DADB /* 个人中心 */,
 				00401C16198A9D4A00AC648E /* Main */,
 				00401C33198AAB0600AC648E /* View */,
 				0040186B198A9C3A00AC648E /* Other */,
@@ -595,6 +697,7 @@
 		00401A4B198A9D1E00AC648E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				0035FCD2198CBE880016DADB /* MBProgressHUD */,
 				00401A4C198A9D1E00AC648E /* XMPP */,
 			);
 			path = Lib;
@@ -1406,10 +1509,13 @@
 		00401C2B198A9F3B00AC648E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				00401C2C198A9F3B00AC648E /* UIBarButtonItem+MJ.h */,
-				00401C2D198A9F3B00AC648E /* UIBarButtonItem+MJ.m */,
-				00401C2E198A9F3B00AC648E /* UIImage+MJ.h */,
-				00401C2F198A9F3B00AC648E /* UIImage+MJ.m */,
+				0035FCCF198CBDFA0016DADB /* tooles.h */,
+				0035FCD0198CBDFA0016DADB /* tooles.m */,
+				0035FCCE198CB3ED0016DADB /* Singleton.h */,
+				00401C2C198A9F3B00AC648E /* UIBarButtonItem+BC.h */,
+				00401C2D198A9F3B00AC648E /* UIBarButtonItem+BC.m */,
+				00401C2E198A9F3B00AC648E /* UIImage+BC.h */,
+				00401C2F198A9F3B00AC648E /* UIImage+BC.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1426,29 +1532,6 @@
 			);
 			name = View;
 			path = Main/View;
-			sourceTree = "<group>";
-		};
-		00D374B4198B7B87000B5EE6 /* 企信通 */ = {
-			isa = PBXGroup;
-			children = (
-				00D374B5198B7B87000B5EE6 /* Controller */,
-				00D374B6198B7B87000B5EE6 /* View */,
-			);
-			path = "企信通";
-			sourceTree = "<group>";
-		};
-		00D374B5198B7B87000B5EE6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		00D374B6198B7B87000B5EE6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		00D374B7198B7B87000B5EE6 /* 企业名册 */ = {
@@ -1468,29 +1551,6 @@
 			sourceTree = "<group>";
 		};
 		00D374B9198B7B87000B5EE6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		00D374BA198B7B87000B5EE6 /* 我的名片 */ = {
-			isa = PBXGroup;
-			children = (
-				00D374BB198B7B87000B5EE6 /* Controller */,
-				00D374BC198B7B87000B5EE6 /* View */,
-			);
-			path = "我的名片";
-			sourceTree = "<group>";
-		};
-		00D374BB198B7B87000B5EE6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		00D374BC198B7B87000B5EE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1556,6 +1616,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
+				Base,
 			);
 			mainGroup = 0040182F198A9C0D00AC648E;
 			productRefGroup = 00401839198A9C0D00AC648E /* Products */;
@@ -1573,10 +1635,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0035FC15198CAC170016DADB /* QXTLoginViewController.xib in Resources */,
 				00401C14198A9D1E00AC648E /* build-libidn.sh in Resources */,
 				00401846198A9C0D00AC648E /* InfoPlist.strings in Resources */,
 				0040184E198A9C0D00AC648E /* Images.xcassets in Resources */,
 				00401C0F198A9D1E00AC648E /* README.txt in Resources */,
+				0035FCD9198CBE880016DADB /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1631,14 +1695,16 @@
 				00401BB3198A9D1E00AC648E /* XMPPRosterMemoryStorage.m in Sources */,
 				00401BD0198A9D1E00AC648E /* XMPPvCardTemp.m in Sources */,
 				00401BED198A9D1E00AC648E /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
+				0035FCD8198CBE880016DADB /* MBProgressHUD+Add.m in Sources */,
 				00401BEB198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */,
 				00401BCE198A9D1E00AC648E /* XMPPvCardCoreDataStorageObject.m in Sources */,
 				00401C0D198A9D1E00AC648E /* ContextFilterLogFormatter.m in Sources */,
 				00401BCF198A9D1E00AC648E /* XMPPvCardTempCoreDataStorageObject.m in Sources */,
+				0035FC14198CAC170016DADB /* QXTLoginViewController.m in Sources */,
 				00401BD9198A9D1E00AC648E /* XMPPResultSet.m in Sources */,
 				00401BA9198A9D1E00AC648E /* XMPPCoreDataStorage.m in Sources */,
 				00401BE5198A9D1E00AC648E /* XMPPCapabilities.xcdatamodel in Sources */,
-				00401C30198A9F3B00AC648E /* UIBarButtonItem+MJ.m in Sources */,
+				00401C30198A9F3B00AC648E /* UIBarButtonItem+BC.m in Sources */,
 				00401BB1198A9D1E00AC648E /* XMPPUserCoreDataStorageObject.m in Sources */,
 				00401C11198A9D1E00AC648E /* DDXMLDocument.m in Sources */,
 				00401BB0198A9D1E00AC648E /* XMPPRosterCoreDataStorage.m in Sources */,
@@ -1670,7 +1736,9 @@
 				00401C01198A9D1E00AC648E /* DDList.m in Sources */,
 				00401BC6198A9D1E00AC648E /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
 				00401BA5198A9D1E00AC648E /* XMPPParser.m in Sources */,
-				00401C31198A9F3B00AC648E /* UIImage+MJ.m in Sources */,
+				00401C31198A9F3B00AC648E /* UIImage+BC.m in Sources */,
+				0035FCD1198CBDFA0016DADB /* tooles.m in Sources */,
+				0035FCDA198CBE880016DADB /* MBProgressHUD.m in Sources */,
 				00401BFB198A9D1E00AC648E /* XMPPAttentionModule.m in Sources */,
 				00401BA4198A9D1E00AC648E /* XMPPModule.m in Sources */,
 				00401BDE198A9D1E00AC648E /* XMPPMessage+XEP_0066.m in Sources */,
@@ -1852,6 +1920,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/企信通/Class/Other/Lib/IQKeyboardManager/IQKeyboardManager",
+					Framework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "企信通/Class/Other/企信通-Prefix.pch";
 				INFOPLIST_FILE = "企信通/Class/Other/企信通-Info.plist";
@@ -1871,6 +1944,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/企信通/Class/Other/Lib/IQKeyboardManager/IQKeyboardManager",
+					Framework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "企信通/Class/Other/企信通-Prefix.pch";
 				INFOPLIST_FILE = "企信通/Class/Other/企信通-Info.plist";

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 itcast. All rights reserved.
 //
 
-#import "UIBarButtonItem+MJ.h"
+#import "UIBarButtonItem+BC.h"
 
-@implementation UIBarButtonItem (MJ)
+@implementation UIBarButtonItem (BC)
 + (UIBarButtonItem *)itemWithIcon:(NSString *)icon highIcon:(NSString *)highIcon target:(id)target action:(SEL)action
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

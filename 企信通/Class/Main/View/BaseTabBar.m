@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 林柏参. All rights reserved.
 //
 
-#define kCount 4
+#define kCount 3
 
 #import "BaseTabBar.h"
 #import "BaseTabBarButton.h"

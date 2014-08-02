@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIBarButtonItem (MJ)
+@interface UIBarButtonItem (BC)
 /**
  *  快速创建一个显示图片的item
  *

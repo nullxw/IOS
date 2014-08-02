@@ -12,10 +12,27 @@
 #endif
 
 // 4.图片处理分类
-#import "UIImage+MJ.h"
+#import "UIImage+BC.h"
 
-// 5.导航栏左右变分类
-#import "UIBarButtonItem+MJ.h"
-
-// 6.全局背景色
+// 5.全局背景色
 #define YYGlobalBg [UIColor colorWithPatternImage:[UIImage imageNamed:@"背景"]]
+
+// 6.导航栏左右按钮的分类
+#import "UIBarButtonItem+BC.h"
+
+// 7.单例
+#import "Singleton.h"
+
+// 8.设置日志颜色输出
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_OFF;
+#endif
+
+// 9.指示器
+#import "tooles.h"

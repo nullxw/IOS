@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 itcast. All rights reserved.
 //
 
-#import "UIImage+MJ.h"
+#import "UIImage+BC.h"
 
-@implementation UIImage (MJ)
+@implementation UIImage (BC)
 + (UIImage *)imageWithName:(NSString *)name
 {
     if (iOS7) {

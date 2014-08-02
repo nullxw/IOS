@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (MJ)
+@interface UIImage (BC)
 /**
  *  加载图片
  *
