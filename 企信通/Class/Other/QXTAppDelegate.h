@@ -4,10 +4,10 @@
 //
 //  Created by 林柏参 on 14/7/31.
 //  Copyright (c) 2014年 林柏参. All rights reserved.
-//
+//  友情提示:如果公司有后端 那么这些都没用 都是整合起来了~
 
 #import <UIKit/UIKit.h>
-#import "XMPPStream.h"
+#import "XMPPFramework.h"
 
 // 全局AppDelegate代理的宏
 #define xmppDelegate    ((QXTAppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -31,6 +31,14 @@ typedef void(^LoginFailedBlock)(kLoginErrorType type);
  *  xmpp 流
  */
 @property (strong,nonatomic,readonly) XMPPStream *xmppStream;
+
+/**
+ *  扩展
+ */
+@property (nonatomic, strong, readonly) XMPPvCardTempModule *xmppvCardTempModule;
+@property (nonatomic, strong, readonly) XMPPvCardAvatarModule *xmppvCardAvatarModule;
+@property (nonatomic, strong, readonly) XMPPRoster *xmppRoster;
+@property (nonatomic, strong, readonly) XMPPRosterCoreDataStorage *xmppRosterCoreDataStorage;
 
 /**
  *  注册用户标记

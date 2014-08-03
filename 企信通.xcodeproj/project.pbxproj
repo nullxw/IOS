@@ -163,6 +163,9 @@
 		00401C45198AAC2200AC648E /* BaseBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C44198AAC2200AC648E /* BaseBadgeButton.m */; };
 		00401C4D198AB6F900AC648E /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401C4C198AB6F900AC648E /* libidn.a */; };
 		009AC7B3198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009AC7B2198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard */; };
+		009AC7BC198E73E900C1D8C3 /* QXTSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009AC7BA198E73E900C1D8C3 /* QXTSetTableViewController.m */; };
+		009AC7BF198E744500C1D8C3 /* QXTSetTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009AC7BE198E744500C1D8C3 /* QXTSetTableViewController.storyboard */; };
+		009AC7C1198E88AB00C1D8C3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009AC7C0198E88AB00C1D8C3 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -488,6 +491,10 @@
 		00401C44198AAC2200AC648E /* BaseBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBadgeButton.m; sourceTree = "<group>"; };
 		00401C4C198AB6F900AC648E /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		009AC7B2198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QXTMineTableViewController.storyboard; sourceTree = "<group>"; };
+		009AC7B9198E73E900C1D8C3 /* QXTSetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTSetTableViewController.h; sourceTree = "<group>"; };
+		009AC7BA198E73E900C1D8C3 /* QXTSetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTSetTableViewController.m; sourceTree = "<group>"; };
+		009AC7BE198E744500C1D8C3 /* QXTSetTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QXTSetTableViewController.storyboard; sourceTree = "<group>"; };
+		009AC7C0198E88AB00C1D8C3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,6 +502,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009AC7C1198E88AB00C1D8C3 /* CoreData.framework in Frameworks */,
 				00401A4A198A9CAD00AC648E /* CFNetwork.framework in Frameworks */,
 				00401C4D198AB6F900AC648E /* libidn.a in Frameworks */,
 				00401A48198A9CA700AC648E /* Security.framework in Frameworks */,
@@ -534,6 +542,9 @@
 				0035FCE0198CC5990016DADB /* QXTMineTableViewController.h */,
 				0035FCE1198CC5990016DADB /* QXTMineTableViewController.m */,
 				009AC7B2198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard */,
+				009AC7B9198E73E900C1D8C3 /* QXTSetTableViewController.h */,
+				009AC7BA198E73E900C1D8C3 /* QXTSetTableViewController.m */,
+				009AC7BE198E744500C1D8C3 /* QXTSetTableViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -630,6 +641,7 @@
 		0040183A198A9C0D00AC648E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				009AC7C0198E88AB00C1D8C3 /* CoreData.framework */,
 				00401A49198A9CAD00AC648E /* CFNetwork.framework */,
 				00401A47198A9CA700AC648E /* Security.framework */,
 				00401A45198A9CA000AC648E /* libxml2.dylib */,
@@ -1650,6 +1662,7 @@
 				0035FC15198CAC170016DADB /* QXTLoginViewController.xib in Resources */,
 				00401C14198A9D1E00AC648E /* build-libidn.sh in Resources */,
 				00401846198A9C0D00AC648E /* InfoPlist.strings in Resources */,
+				009AC7BF198E744500C1D8C3 /* QXTSetTableViewController.storyboard in Resources */,
 				0040184E198A9C0D00AC648E /* Images.xcassets in Resources */,
 				009AC7B3198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard in Resources */,
 				00401C0F198A9D1E00AC648E /* README.txt in Resources */,
@@ -1732,6 +1745,7 @@
 				00401BBA198A9D1E00AC648E /* XMPPIQ+LastActivity.m in Sources */,
 				00401C12198A9D1E00AC648E /* DDXMLElement.m in Sources */,
 				00401BC2198A9D1E00AC648E /* XMPPRoomHybridStorage.m in Sources */,
+				009AC7BC198E73E900C1D8C3 /* QXTSetTableViewController.m in Sources */,
 				00401B9D198A9D1E00AC648E /* NSData+XMPP.m in Sources */,
 				00401BFF198A9D1E00AC648E /* XMPPMessage+XEP_0333.m in Sources */,
 				00401B99198A9D1E00AC648E /* XMPPDigestMD5Authentication.m in Sources */,

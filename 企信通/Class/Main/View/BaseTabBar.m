@@ -33,7 +33,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        if (!iOS7) { // 非iOS7下,设置tabbar的背景
+        if (!iOS7) { 
             self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithName:@"tabbar_background"]];
         }
         

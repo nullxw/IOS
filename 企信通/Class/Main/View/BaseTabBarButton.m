@@ -48,10 +48,8 @@
     return self;
 }
 
-// 重写去掉高亮状态
 - (void)setHighlighted:(BOOL)highlighted {}
 
-// 内部图片的frame
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     CGFloat imageW = contentRect.size.width;
@@ -59,7 +57,6 @@
     return CGRectMake(0, 0, imageW, imageH);
 }
 
-// 内部文字的frame
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     CGFloat titleY = contentRect.size.height * IWTabBarButtonImageRatio;

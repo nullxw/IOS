@@ -62,7 +62,7 @@ extern NSString * const kXMPPLoginHostNameKey;
 }
 
 /**
- *  注册
+ *  注册 ~~~ 
  */
 - (IBAction)regeist:(id)sender {
     

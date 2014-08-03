@@ -20,6 +20,8 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 @interface QXTAppDelegate() <XMPPStreamDelegate>
 {
     LoginFailedBlock        _failedBlock;
+    XMPPReconnect           *_xmppReconnect;
+    XMPPvCardCoreDataStorage    *_xmppvCardCoreDataStorage;
 }
 
 /**
@@ -151,10 +153,12 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     dispatch_async(dispatch_get_main_queue(), ^{
         self.window.rootViewController = [[BaseTabBarViewController alloc]init];
         
-        if (!_window.isKeyWindow) {
-            [_window makeKeyAndVisible];
-        }
+//        if (!_window.isKeyWindow) {
+//            [_window makeKeyAndVisible];
+//        }
     });
+    
+    
 }
 
 #pragma mark 用户注销
@@ -182,12 +186,26 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 
 -(void)setupXmppStream
 {
-    // 1.断言
     NSAssert(_xmppStream == nil, @"XMPPStream被重复实例化了!");
     
     // 2. 设置代理
-    // 提示：使用类似框架时，包括看网络开源代码，大多数会使用dispatch_get_main_queue()
     _xmppStream = [[XMPPStream alloc]init];
+    
+    _xmppReconnect = [[XMPPReconnect alloc] init];
+    // 2> 电子名片
+    _xmppvCardCoreDataStorage = [XMPPvCardCoreDataStorage sharedInstance];
+    _xmppvCardTempModule = [[XMPPvCardTempModule alloc] initWithvCardStorage:_xmppvCardCoreDataStorage];
+    _xmppvCardAvatarModule = [[XMPPvCardAvatarModule alloc] initWithvCardTempModule:_xmppvCardTempModule];
+    _xmppRosterCoreDataStorage = [[XMPPRosterCoreDataStorage alloc] init];
+    _xmppRoster = [[XMPPRoster alloc] initWithRosterStorage:_xmppRosterCoreDataStorage];
+    
+    // 3. 激活扩展模块
+    [_xmppReconnect activate:_xmppStream];
+    [_xmppvCardTempModule activate:_xmppStream];
+#warning 激活这个扩展会奔溃~~~~~~~~~~
+//    [_xmppvCardAvatarModule activate:_xmppStream];
+    [_xmppRoster activate:_xmppStream];
+    
     [_xmppStream addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
 }
 
@@ -199,6 +217,30 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     // 真正的断开连接
     [_xmppStream disconnect];
 }
+
+- (void)teardownXmppStream
+{
+    [_xmppStream removeDelegate:self];
+
+    [_xmppStream disconnect];
+
+    [_xmppReconnect deactivate];
+    [_xmppvCardTempModule deactivate];
+    [_xmppvCardAvatarModule deactivate];
+    [_xmppRoster deactivate];
+
+    _xmppReconnect = nil;
+    
+    _xmppvCardAvatarModule = nil;
+    _xmppvCardCoreDataStorage = nil;
+    _xmppvCardTempModule = nil;
+    
+    _xmppRosterCoreDataStorage = nil;
+    _xmppRoster = nil;
+    
+    _xmppStream = nil;
+}
+
 
 - (void)goOnline
 {
@@ -263,9 +305,6 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 #pragma mark 注册失败
 - (void)xmppStream:(XMPPStream *)sender didNotRegister:(DDXMLElement *)error
 {
-    // 注册失败，要通知登录窗口
-    // 通常用户名重复会注册失败
-    // 判断出错处理块代码是否定义
     if (_failedBlock) {
         dispatch_async(dispatch_get_main_queue(), ^{
             _failedBlock(kLoginRegisterError);
@@ -277,9 +316,6 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender
 {
     DDLogInfo(@"身份验证成功!");
-    
-    // 通知服务器用户上线，QQ上面自己头像“亮”是客户端干的，只需要通知服务器，上线即可
-    // 后续操作都是客户端针对状态，自行调整的
     [self goOnline];
     
     // 显示
