@@ -55,7 +55,7 @@
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     CGFloat imageW = contentRect.size.width;
-    CGFloat imageH = contentRect.size.height * IWTabBarButtonImageRatio;
+    CGFloat imageH = contentRect.size.height * IWTabBarButtonImageRatio + 12;
     return CGRectMake(0, 0, imageW, imageH);
 }
 

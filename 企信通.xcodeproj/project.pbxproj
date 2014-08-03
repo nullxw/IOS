@@ -162,6 +162,7 @@
 		00401C42198AABBC00AC648E /* BaseTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C41198AABBC00AC648E /* BaseTabBarButton.m */; };
 		00401C45198AAC2200AC648E /* BaseBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401C44198AAC2200AC648E /* BaseBadgeButton.m */; };
 		00401C4D198AB6F900AC648E /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00401C4C198AB6F900AC648E /* libidn.a */; };
+		009AC7B3198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009AC7B2198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -486,6 +487,7 @@
 		00401C43198AAC2200AC648E /* BaseBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBadgeButton.h; sourceTree = "<group>"; };
 		00401C44198AAC2200AC648E /* BaseBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBadgeButton.m; sourceTree = "<group>"; };
 		00401C4C198AB6F900AC648E /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
+		009AC7B2198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QXTMineTableViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,6 +533,7 @@
 			children = (
 				0035FCE0198CC5990016DADB /* QXTMineTableViewController.h */,
 				0035FCE1198CC5990016DADB /* QXTMineTableViewController.m */,
+				009AC7B2198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1648,6 +1651,7 @@
 				00401C14198A9D1E00AC648E /* build-libidn.sh in Resources */,
 				00401846198A9C0D00AC648E /* InfoPlist.strings in Resources */,
 				0040184E198A9C0D00AC648E /* Images.xcassets in Resources */,
+				009AC7B3198E6FA200C1D8C3 /* QXTMineTableViewController.storyboard in Resources */,
 				00401C0F198A9D1E00AC648E /* README.txt in Resources */,
 				0035FCD9198CBE880016DADB /* MBProgressHUD.bundle in Resources */,
 			);

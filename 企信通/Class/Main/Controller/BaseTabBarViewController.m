@@ -75,15 +75,19 @@
 {
     // 1.好友列表
     QXTFriendTableViewController *home = [[QXTFriendTableViewController alloc] init];
-    [self setupChildViewController:home title:@"好友列表" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    [self setupChildViewController:home title:@"好友列表" imageName:@"tabbar_mainframe" selectedImageName:@"tabbar_mainframe"];
     
     // 2.系统名册
     UIViewController *message = [[UIViewController alloc] init];
-    [self setupChildViewController:message title:@"系统名册" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
+    [self setupChildViewController:message title:@"系统名册" imageName:@"tabbar_contacts" selectedImageName:@"tabbar_contacts"];
     
     // 3.个人中心
-    QXTMineTableViewController *discover = [[QXTMineTableViewController alloc] init];
-    [self setupChildViewController:discover title:@"个人中心" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+//    QXTMineTableViewController *discover = [[QXTMineTableViewController alloc] init];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"QXTMineTableViewController" bundle:nil];
+    QXTMineTableViewController *mine = [sb instantiateInitialViewController];
+    
+    [self setupChildViewController:mine title:@"个人中心" imageName:@"tabbar_me" selectedImageName:@"tabbar_me"];
 }
 
 /**
