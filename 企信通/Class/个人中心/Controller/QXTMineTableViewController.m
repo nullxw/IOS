@@ -29,16 +29,9 @@
     [super viewDidLoad];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"注销" style:UIBarButtonItemStyleDone target:self action:@selector(zhuxiao)];
-    
-//    XMPPvCardTemp *myCard = [xmppDelegate xmppvCardTempModule].myvCardTemp;
-    
-//    myCard.nickname = _nickNameLabel.text;
-//    myCard.orgName = _orgNameLabel.text;
-//    myCard.orgUnits = @[_orgUnitLabel.text];
-//    myCard.title = _titleLabel.text;
-//    myCard.note = _telLabel.text;
-//    myCard.mailer = _emailLabel.text;
-    
+    /**
+     *  后端有接口 这里就简单了
+     */
     _nickNameLabel.text = @"Rains";
     _jidLabel.text = xmppDelegate.xmppStream.myJID.bare;
     _orgNameLabel.text = @"IBM";

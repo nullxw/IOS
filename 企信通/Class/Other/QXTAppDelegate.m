@@ -11,8 +11,6 @@
 #import "XMPPPresence.h"
 #import "QXTLoginViewController.h"
 
-// 赋值语句不能够写在.h中，只能写在.m中
-// 使用此种方式，可以保证常量字符串在内存中有且仅有一个地址
 NSString * const kXMPPLoginUserNameKey = @"xmppUserName";
 NSString * const kXMPPLoginPasswordKey = @"xmppPassword";
 NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
@@ -83,8 +81,6 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     
     // 如果用户名或者主机为空，不再继续
     if (hostName.length <= 0 || userName.length <= 0) {
-        // 用户名和主机都为空说明用户没有登录，通常是第一次运行程序
-        // 直接显示登录窗口
         _failedBlock = nil;
         
         // 在主线程上更新
@@ -104,7 +100,6 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     _xmppStream.myJID = [XMPPJID jidWithUser:userName domain:hostName resource:nil];
     
     // 连接
-    // GCDAsnycSocket框架中，所有的网络通讯都是异步的
     NSError *error = nil;
     if (![_xmppStream connectWithTimeout:XMPPStreamTimeoutNone error:&error]) {
         DDLogInfo(@"%@", error.localizedDescription);
@@ -131,10 +126,7 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 {
     // 1. 保存块代码
     _failedBlock = faild;
-    
-    // 如果已经存在到服务器的长连接，先断开到服务器的连接
-    // 提示：在使用连接之前，需要首先判断连接是否存在，
-    // 因为再次建立的连接有可能应为MyJID的不同，让服务器无法区分准确的客户端！
+
     if (!_xmppStream.isDisconnected) {
         [_xmppStream disconnect];
     }
@@ -145,17 +137,15 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
 
 -(void)setupMainViewController
 {
-    // 切换到Login视图控制器
-    // 如果是点登录按钮或者注册按钮，此时_failedBlock是有内容
     _failedBlock = nil;
     
     // 在主线程上更新
     dispatch_async(dispatch_get_main_queue(), ^{
         self.window.rootViewController = [[BaseTabBarViewController alloc]init];
         
-//        if (!_window.isKeyWindow) {
-//            [_window makeKeyAndVisible];
-//        }
+        if (!_window.isKeyWindow) {
+            [_window makeKeyAndVisible];
+        }
     });
     
     
@@ -199,12 +189,17 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     _xmppRosterCoreDataStorage = [[XMPPRosterCoreDataStorage alloc] init];
     _xmppRoster = [[XMPPRoster alloc] initWithRosterStorage:_xmppRosterCoreDataStorage];
     
+    // 添加好友
+    _xmppMessageArchivingCoreDataStorage = [[XMPPMessageArchivingCoreDataStorage alloc]init];
+    _xmppMessageArchiving = [[XMPPMessageArchiving alloc]initWithMessageArchivingStorage:_xmppMessageArchivingCoreDataStorage];
+    
     // 3. 激活扩展模块
     [_xmppReconnect activate:_xmppStream];
     [_xmppvCardTempModule activate:_xmppStream];
 #warning 激活这个扩展会奔溃~~~~~~~~~~
 //    [_xmppvCardAvatarModule activate:_xmppStream];
     [_xmppRoster activate:_xmppStream];
+    [_xmppMessageArchiving activate:_xmppStream];
     
     [_xmppStream addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
 }
@@ -228,6 +223,7 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     [_xmppvCardTempModule deactivate];
     [_xmppvCardAvatarModule deactivate];
     [_xmppRoster deactivate];
+    [_xmppMessageArchiving deactivate];
 
     _xmppReconnect = nil;
     
@@ -239,6 +235,9 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     _xmppRoster = nil;
     
     _xmppStream = nil;
+    
+    _xmppMessageArchiving = nil;
+    _xmppMessageArchivingCoreDataStorage = nil;
 }
 
 

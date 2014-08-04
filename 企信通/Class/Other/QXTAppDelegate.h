@@ -33,12 +33,23 @@ typedef void(^LoginFailedBlock)(kLoginErrorType type);
 @property (strong,nonatomic,readonly) XMPPStream *xmppStream;
 
 /**
- *  扩展
+ *  名片
  */
+
 @property (nonatomic, strong, readonly) XMPPvCardTempModule *xmppvCardTempModule;
 @property (nonatomic, strong, readonly) XMPPvCardAvatarModule *xmppvCardAvatarModule;
+
+/**
+ *  好友列表
+ */
 @property (nonatomic, strong, readonly) XMPPRoster *xmppRoster;
 @property (nonatomic, strong, readonly) XMPPRosterCoreDataStorage *xmppRosterCoreDataStorage;
+
+/**
+ *  添加好友
+ */
+@property (nonatomic, strong, readonly) XMPPMessageArchiving *xmppMessageArchiving;
+@property (nonatomic, strong, readonly) XMPPMessageArchivingCoreDataStorage *xmppMessageArchivingCoreDataStorage;
 
 /**
  *  注册用户标记
