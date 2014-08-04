@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "QXTAppDelegate.h"
 #import "QXTAddFriendViewController.h"
-#import "ChatViewController.h"
+#import "MessageDisplayDetailViewController.h"
 
 @interface QXTFriendTableViewController ()<NSFetchedResultsControllerDelegate>
 {
@@ -147,8 +147,7 @@
     
     XMPPUserCoreDataStorageObject *user = [_fetchedResultsController objectAtIndexPath:indexPath];
     
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"ChatViewController" bundle:nil];
-    ChatViewController *chat = [sb instantiateInitialViewController];
+    MessageDisplayDetailViewController *chat = [[MessageDisplayDetailViewController alloc]init];
     chat.bareJID = user.jid;
     
     [self.navigationController pushViewController:chat animated:YES];
