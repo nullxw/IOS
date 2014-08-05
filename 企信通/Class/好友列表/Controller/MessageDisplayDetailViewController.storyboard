@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QEz-JX-SNE">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Message Display Detail View Controller-->
+        <scene sceneID="2xQ-CP-ldY">
+            <objects>
+                <viewController id="QEz-JX-SNE" customClass="MessageDisplayDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q2A-t0-IXY"/>
+                        <viewControllerLayoutGuide type="bottom" id="VDw-1U-ofY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QJh-5B-sDp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-pG-qwd">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLh-NW-zdc">
+                                        <rect key="frame" x="47" y="7" width="181" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3u-rh-YHh">
+                                        <rect key="frame" x="5" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="ToolViewInputVoice">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftDefaultImage:" destination="QEz-JX-SNE" eventType="touchUpInside" id="pVY-Gc-431"/>
+                                        </connections>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qA-nF-5PY">
+                                        <rect key="frame" x="236" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ToolViewEmotion" backgroundImage="ToolViewInputVoice">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7E-mX-lkH">
+                                        <rect key="frame" x="273" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="TypeSelectorBtn_Black" backgroundImage="ToolViewInputVoice">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZgW-sZ-Rhd"/>
+                                </constraints>
+                            </view>
+                            <tableView appearanceType="aqua" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-EV-tqi">
+                                <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QEz-JX-SNE" id="TP3-Dd-Oea"/>
+                                    <outlet property="delegate" destination="QEz-JX-SNE" id="DnE-Bz-gaO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hj9-EV-tqi" secondAttribute="trailing" id="Fqm-3c-O0Z"/>
+                            <constraint firstItem="hj9-EV-tqi" firstAttribute="leading" secondItem="QJh-5B-sDp" secondAttribute="leading" id="Fu0-jy-WCp"/>
+                            <constraint firstItem="hj9-EV-tqi" firstAttribute="top" secondItem="q2A-t0-IXY" secondAttribute="bottom" id="TQb-Ay-x69"/>
+                            <constraint firstItem="0LP-pG-qwd" firstAttribute="leading" secondItem="QJh-5B-sDp" secondAttribute="leading" id="aen-rD-8Hm"/>
+                            <constraint firstItem="0LP-pG-qwd" firstAttribute="top" secondItem="hj9-EV-tqi" secondAttribute="bottom" id="fdy-7V-rCt"/>
+                            <constraint firstAttribute="trailing" secondItem="0LP-pG-qwd" secondAttribute="trailing" id="ft5-fU-Bcy"/>
+                            <constraint firstItem="VDw-1U-ofY" firstAttribute="top" secondItem="0LP-pG-qwd" secondAttribute="bottom" id="nBh-gY-NVd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inpuerVerticalSpace" destination="nBh-gY-NVd" id="bmF-E5-ecV"/>
+                        <outlet property="leftDefaultImage" destination="p3u-rh-YHh" id="VYa-jS-BRT"/>
+                        <outlet property="tableView" destination="hj9-EV-tqi" id="C62-Yp-Xj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9D-Yd-FrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="-143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ToolViewEmotion" width="35" height="35"/>
+        <image name="ToolViewInputVoice" width="35" height="35"/>
+        <image name="TypeSelectorBtn_Black" width="35" height="35"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

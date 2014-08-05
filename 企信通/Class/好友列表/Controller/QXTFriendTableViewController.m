@@ -147,7 +147,12 @@
     
     XMPPUserCoreDataStorageObject *user = [_fetchedResultsController objectAtIndexPath:indexPath];
     
-    MessageDisplayDetailViewController *chat = [[MessageDisplayDetailViewController alloc]init];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MessageDisplayDetailViewController" bundle:nil];
+    
+    MessageDisplayDetailViewController *chat = [sb instantiateInitialViewController];
+    
+//     MessageDisplayDetailViewController *chat = [[MessageDisplayDetailViewController alloc]init];
+    
     chat.bareJID = user.jid;
     
     [self.navigationController pushViewController:chat animated:YES];
