@@ -30,14 +30,12 @@
     // 绑定数据
     [self dataBinding];
     
-//    self.title = xmppDelegate.xmppStream.myJID.bare;
+    self.navigationItem.title = _bareName;
     
     self.view.backgroundColor = [UIColor whiteColor];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    
-    [self scrollToTableBottom];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(killLeft)];
 }
@@ -75,9 +73,9 @@
     NSError *error = nil;
     if (![_fetchResultsController performFetch:&error]) {
         DDLogError(@"localizedDescription-------%@", error.localizedDescription);
+    }else{
+         [self scrollToTableBottom];
     }
-    
-    
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -133,7 +131,9 @@
     
     [UIView animateWithDuration:time animations:^{
         _inpuerVerticalSpace.constant = rect.size.height;
-//        [self scrollToTableBottom];
+        
+    }completion:^(BOOL finished) {
+        [self scrollToTableBottom];
     }];
 }
 
@@ -154,11 +154,6 @@
 - (IBAction)leftDefaultImage:(UIButton *)sender {
     _inpuerVerticalSpace.constant = 0;
     [_textField resignFirstResponder];
-}
-
--(void)dealloc
-{
-    NSLog(@"控制器被销毁了");
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

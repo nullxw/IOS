@@ -13,6 +13,7 @@
 // 聊天的好友JID
 @property (nonatomic, strong) XMPPJID *bareJID;
 
-- (void)jumpBottom;
+// 好友的昵称
+@property (nonatomic, strong) NSString *bareName;
 
 @end

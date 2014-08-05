@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.title = [[NSUserDefaults standardUserDefaults]objectForKey:@"xmppUserName"];
+    
     // 1. 获取到花名册的上下文
     NSManagedObjectContext *context = xmppDelegate.xmppRosterCoreDataStorage.mainThreadManagedObjectContext;
     
@@ -135,6 +137,7 @@
     MessageDisplayDetailViewController *controller = [sb instantiateInitialViewController];
     
     controller.bareJID = user.jid;
+    controller.bareName = user.jidStr;
     
     [self.navigationController pushViewController:controller animated:YES];
 }
