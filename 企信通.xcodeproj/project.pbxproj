@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00277E4C19909E140016FBDA /* XMPPMessageArchiving.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00277E4A19909E140016FBDA /* XMPPMessageArchiving.xcdatamodeld */; };
+		00277E4F1990A2CF0016FBDA /* XMPPvCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00277E4D1990A2CF0016FBDA /* XMPPvCard.xcdatamodeld */; };
 		0030106D198FD01400BE287A /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0030106C198FD01400BE287A /* libidn.a */; };
 		003011BC198FD55B00BE287A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 003011BB198FD55B00BE287A /* libicucore.dylib */; };
 		003011BE198FD56600BE287A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003011BD198FD56600BE287A /* CoreText.framework */; };
@@ -185,6 +187,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00277E4B19909E140016FBDA /* XMPPMessageArchiving.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPMessageArchiving.xcdatamodel; sourceTree = "<group>"; };
+		00277E4E1990A2CF0016FBDA /* XMPPvCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPvCard.xcdatamodel; sourceTree = "<group>"; };
 		0030106C198FD01400BE287A /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		003011BB198FD55B00BE287A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		003011BD198FD56600BE287A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -1140,7 +1144,7 @@
 		00401ADD198A9D1E00AC648E /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
-				00401ADE198A9D1E00AC648E /* XMPPvCard.xcdatamodeld */,
+				00277E4D1990A2CF0016FBDA /* XMPPvCard.xcdatamodeld */,
 				00401ADF198A9D1E00AC648E /* XMPPvCardAvatarCoreDataStorageObject.h */,
 				00401AE0198A9D1E00AC648E /* XMPPvCardAvatarCoreDataStorageObject.m */,
 				00401AE1198A9D1E00AC648E /* XMPPvCardCoreDataStorage.h */,
@@ -1279,7 +1283,7 @@
 		00401B26198A9D1E00AC648E /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
-				00401B27198A9D1E00AC648E /* XMPPMessageArchiving.xcdatamodeld */,
+				00277E4A19909E140016FBDA /* XMPPMessageArchiving.xcdatamodeld */,
 				00401B28198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.h */,
 				00401B29198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.m */,
 				00401B2A198A9D1E00AC648E /* XMPPMessageArchiving_Message_CoreDataObject.h */,
@@ -1752,6 +1756,7 @@
 				00401BED198A9D1E00AC648E /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
 				0035FCD8198CBE880016DADB /* MBProgressHUD+Add.m in Sources */,
 				0035FCDF198CC52E0016DADB /* QXTFriendTableViewController.m in Sources */,
+				00277E4C19909E140016FBDA /* XMPPMessageArchiving.xcdatamodeld in Sources */,
 				00401BEB198A9D1E00AC648E /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */,
 				00401BCE198A9D1E00AC648E /* XMPPvCardCoreDataStorageObject.m in Sources */,
 				00401C0D198A9D1E00AC648E /* ContextFilterLogFormatter.m in Sources */,
@@ -1794,6 +1799,7 @@
 				00401BC6198A9D1E00AC648E /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
 				00401BA5198A9D1E00AC648E /* XMPPParser.m in Sources */,
 				00401C31198A9F3B00AC648E /* UIImage+BC.m in Sources */,
+				00277E4F1990A2CF0016FBDA /* XMPPvCard.xcdatamodeld in Sources */,
 				0035FCD1198CBDFA0016DADB /* tooles.m in Sources */,
 				0035FCDA198CBE880016DADB /* MBProgressHUD.m in Sources */,
 				00401BFB198A9D1E00AC648E /* XMPPAttentionModule.m in Sources */,
@@ -2084,6 +2090,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		00277E4A19909E140016FBDA /* XMPPMessageArchiving.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00277E4B19909E140016FBDA /* XMPPMessageArchiving.xcdatamodel */,
+			);
+			currentVersion = 00277E4B19909E140016FBDA /* XMPPMessageArchiving.xcdatamodel */;
+			path = XMPPMessageArchiving.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		00277E4D1990A2CF0016FBDA /* XMPPvCard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00277E4E1990A2CF0016FBDA /* XMPPvCard.xcdatamodel */,
+			);
+			currentVersion = 00277E4E1990A2CF0016FBDA /* XMPPvCard.xcdatamodel */;
+			path = XMPPvCard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		00401ABC198A9D1E00AC648E /* XMPPRoom.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
@@ -2097,22 +2123,6 @@
 			children = (
 			);
 			path = XMPPRoomHybrid.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		00401ADE198A9D1E00AC648E /* XMPPvCard.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = XMPPvCard.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		00401B27198A9D1E00AC648E /* XMPPMessageArchiving.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = XMPPMessageArchiving.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

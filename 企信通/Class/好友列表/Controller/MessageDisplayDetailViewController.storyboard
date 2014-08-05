@@ -26,6 +26,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="QEz-JX-SNE" id="s9R-4D-RXL"/>
+                                        </connections>
                                     </textField>
                                     <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3u-rh-YHh">
                                         <rect key="frame" x="5" y="5" width="35" height="35"/>
@@ -57,8 +60,8 @@
                                     <constraint firstAttribute="height" constant="44" id="ZgW-sZ-Rhd"/>
                                 </constraints>
                             </view>
-                            <tableView appearanceType="aqua" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-EV-tqi">
-                                <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                            <tableView appearanceType="aqua" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-EV-tqi">
+                                <rect key="frame" x="0.0" y="55" width="320" height="458"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -82,6 +85,7 @@
                         <outlet property="inpuerVerticalSpace" destination="nBh-gY-NVd" id="bmF-E5-ecV"/>
                         <outlet property="leftDefaultImage" destination="p3u-rh-YHh" id="VYa-jS-BRT"/>
                         <outlet property="tableView" destination="hj9-EV-tqi" id="C62-Yp-Xj1"/>
+                        <outlet property="textField" destination="TLh-NW-zdc" id="lAP-mW-87f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9D-Yd-FrT" userLabel="First Responder" sceneMemberID="firstResponder"/>

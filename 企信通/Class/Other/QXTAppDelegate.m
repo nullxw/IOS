@@ -183,25 +183,26 @@ NSString * const kXMPPLoginHostNameKey = @"xmppHostName";
     
     _xmppReconnect = [[XMPPReconnect alloc] init];
     // 2> 电子名片
-    _xmppvCardCoreDataStorage = [XMPPvCardCoreDataStorage sharedInstance];
+    _xmppvCardCoreDataStorage = [[XMPPvCardCoreDataStorage alloc]init];
     _xmppvCardTempModule = [[XMPPvCardTempModule alloc] initWithvCardStorage:_xmppvCardCoreDataStorage];
     _xmppvCardAvatarModule = [[XMPPvCardAvatarModule alloc] initWithvCardTempModule:_xmppvCardTempModule];
     _xmppRosterCoreDataStorage = [[XMPPRosterCoreDataStorage alloc] init];
     _xmppRoster = [[XMPPRoster alloc] initWithRosterStorage:_xmppRosterCoreDataStorage];
     
-    // 添加好友
+   
     _xmppMessageArchivingCoreDataStorage = [[XMPPMessageArchivingCoreDataStorage alloc]init];
     _xmppMessageArchiving = [[XMPPMessageArchiving alloc]initWithMessageArchivingStorage:_xmppMessageArchivingCoreDataStorage];
     
     // 3. 激活扩展模块
     [_xmppReconnect activate:_xmppStream];
     [_xmppvCardTempModule activate:_xmppStream];
-#warning 激活这个扩展会奔溃~~~~~~~~~~
-//    [_xmppvCardAvatarModule activate:_xmppStream];
+
+    [_xmppvCardAvatarModule activate:_xmppStream];
     [_xmppRoster activate:_xmppStream];
     [_xmppMessageArchiving activate:_xmppStream];
     
     [_xmppStream addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
+//    [_xmppRoster addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
 }
 
 - (void)disconnect

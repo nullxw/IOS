@@ -4,7 +4,7 @@
 //
 //  Created by 林柏参 on 14/7/31.
 //  Copyright (c) 2014年 林柏参. All rights reserved.
-//  友情提示:如果公司有后端 那么这些都没用 都是整合起来了~
+//  友情提示:不需要接口 自己搭建个服务器即可运行~ 邮箱:sshare@qq.com 求交流求进步
 
 #import <UIKit/UIKit.h>
 #import "XMPPFramework.h"
