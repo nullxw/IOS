@@ -12,6 +12,7 @@
 		0030106D198FD01400BE287A /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0030106C198FD01400BE287A /* libidn.a */; };
 		003011BC198FD55B00BE287A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 003011BB198FD55B00BE287A /* libicucore.dylib */; };
 		003011BE198FD56600BE287A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003011BD198FD56600BE287A /* CoreText.framework */; };
+		0034F4831991137A00B19C58 /* QXTMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034F4821991137A00B19C58 /* QXTMessageTableViewCell.m */; };
 		0035FC14198CAC170016DADB /* QXTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FC12198CAC170016DADB /* QXTLoginViewController.m */; };
 		0035FC15198CAC170016DADB /* QXTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0035FC13198CAC170016DADB /* QXTLoginViewController.xib */; };
 		0035FCD1198CBDFA0016DADB /* tooles.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035FCD0198CBDFA0016DADB /* tooles.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -192,6 +193,8 @@
 		0030106C198FD01400BE287A /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		003011BB198FD55B00BE287A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		003011BD198FD56600BE287A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0034F4811991137A00B19C58 /* QXTMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTMessageTableViewCell.h; sourceTree = "<group>"; };
+		0034F4821991137A00B19C58 /* QXTMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTMessageTableViewCell.m; sourceTree = "<group>"; };
 		0035FC11198CAC170016DADB /* QXTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXTLoginViewController.h; sourceTree = "<group>"; };
 		0035FC12198CAC170016DADB /* QXTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXTLoginViewController.m; sourceTree = "<group>"; };
 		0035FC13198CAC170016DADB /* QXTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QXTLoginViewController.xib; sourceTree = "<group>"; };
@@ -1584,6 +1587,8 @@
 		00A1E0DD19907049008D6A76 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0034F4811991137A00B19C58 /* QXTMessageTableViewCell.h */,
+				0034F4821991137A00B19C58 /* QXTMessageTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1833,6 +1838,7 @@
 				00401BC7198A9D1E00AC648E /* XMPPRoomOccupantMemoryStorageObject.m in Sources */,
 				00401BEF198A9D1E00AC648E /* XMPPvCardAvatarModule.m in Sources */,
 				00401B97198A9D1E00AC648E /* XMPPDeprecatedDigestAuthentication.m in Sources */,
+				0034F4831991137A00B19C58 /* QXTMessageTableViewCell.m in Sources */,
 				00401C04198A9D1E00AC648E /* XMPPIDTracker.m in Sources */,
 				00401C09198A9D1E00AC648E /* DDASLLogger.m in Sources */,
 				00401BE3198A9D1E00AC648E /* XMPPTransports.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "MessageDisplayDetailViewController.h"
+#import "QXTMessageTableViewCell.h"
 
 @interface MessageDisplayDetailViewController ()<UITableViewDataSource,UITableViewDelegate, NSFetchedResultsControllerDelegate, UITextFieldDelegate>
 {
@@ -26,6 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     // 绑定数据
     [self dataBinding];
@@ -165,19 +168,32 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    static NSString *CellIdentifier1 = @"cell1";
+    static NSString *CellIdentifier2 = @"cell2";
     
     // 取消息记录
     XMPPMessageArchiving_Message_CoreDataObject *message = [_fetchResultsController objectAtIndexPath:indexPath];
     
-    cell.textLabel.text = message.body;
+    QXTMessageTableViewCell *cell = Nil;
+    
+    if (message.isOutgoing) {
+
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier1 forIndexPath:indexPath];
+        
+    }else{
+        
+       cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier2 forIndexPath:indexPath];
+    }
+    
+    [cell.ChatTitle setTitle:message.body forState:UIControlStateNormal];
+    [cell.ChatTitle setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
 }
 
 #pragma mark 跳转到底部
